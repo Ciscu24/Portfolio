@@ -11,6 +11,12 @@
 .d-flex {
   display: flex;
 }
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 8%;
+}
 /* ./General */
 
 nav ul {
@@ -62,10 +68,10 @@ nav ul li:hover::after {
 
 /* Home */
 #home {
-  margin-top: 80px;
+  padding-top: 140px;
+  padding-bottom: 80px;
   background-color: #48d8a4;
   color: white;
-  padding-inline: 8%;
   font-size: 2.5rem;
 }
 
@@ -78,127 +84,27 @@ nav ul li:hover::after {
 }
 /* ./Home */
 
+/* About */
+#about {
+  padding-block: 50px;
+}
 
-
-
-
-
-
-
-
-/* Hero Section */
-#hero {
-  background: url("https://via.placeholder.com/1200x600") no-repeat center
-    center/cover;
-  color: #fff;
-  height: 100vh;
+.container-about {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-#hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.container-about .container-img {
+  width: 30%;
 }
 
-#hero p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #008cba;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #005f5f;
-}
-
-/* Secciones */
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#about p {
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-/* Habilidades */
-.skills-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.skill {
-  margin: 20px;
-  text-align: left;
-}
-
-.skill-bar {
-  background: #ddd;
-  border-radius: 25px;
-  overflow: hidden;
-  height: 20px;
-  width: 200px;
-}
-
-.skill-level {
-  height: 100%;
-  background: #008cba;
-  border-radius: 25px 0 0 25px;
-}
-
-/* Proyectos */
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project {
-  background: #fff;
-  margin: 10px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Contacto */
-#contact-form {
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-#contact-form input,
-#contact-form textarea {
+.container-about .container-img img {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
 }
 
-#contact-form button {
-  background: #008cba;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
+.container-about .container-text {
+  width: 70%;
 }
-
-#contact-form button:hover {
-  background: #005f5f;
-}
+/* ./About */
 
 /* Footer */
 footer {
