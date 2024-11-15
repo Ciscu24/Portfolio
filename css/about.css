@@ -1,0 +1,20 @@
+#about {
+  padding-block: 50px;
+}
+#about .header {
+  padding-bottom: 0.5rem;
+}
+
+.container-about {
+  display: flex;
+  border-radius: 10rem;
+}
+.container-about .container-img {
+  width: 30%;
+}
+.container-about .container-img img {
+  width: 100%;
+}
+.container-about .container-text {
+  width: 70%;
+}

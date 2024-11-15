@@ -1,15 +1,6 @@
-/* General */
 * {
   margin: 0;
   padding: 0;
-}
-
-.d-none {
-  display: none;
-}
-
-.d-flex {
-  display: flex;
 }
 
 .wrapper {
@@ -17,11 +8,11 @@
   margin: 0 auto;
   padding: 0 8%;
 }
-/* ./General */
 
 nav ul {
-  background-color: rgba(57, 79, 244, 0.9);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -36,19 +27,9 @@ nav ul {
   width: 100%;
   z-index: 10;
 }
-
 nav ul li {
   position: relative;
-  /* padding: 15px 26px 10px; */
 }
-
-nav ul li a {
-  color: #fff;
-  display: inline-block;
-  text-decoration: none;
-  padding: 15px 26px 10px;
-}
-
 nav ul li::after {
   content: "";
   width: 72%;
@@ -60,31 +41,53 @@ nav ul li::after {
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
-
 nav ul li:hover::after {
   transform: scaleX(1);
 }
-/* ./Navbar */
+nav ul li a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 26px 10px;
+}
 
-/* Home */
 #home {
   padding-top: 140px;
   padding-bottom: 80px;
-  background-color: #48d8a4;
-  color: white;
   font-size: 2.5rem;
 }
-
-#home h1 {
-  text-align: start;
-}
-
 #home .container-flip .icon.icon {
   font-size: 3rem;
 }
-/* ./Home */
+#home .contact-header {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+#home .contact-header .copyboard {
+  display: flex;
+  margin: 0.5rem 0;
+}
+#home .contact-header .copyboard .container {
+  padding: 0.5rem 1rem;
+  background-color: rgb(243, 244, 246);
+  display: flex;
+  color: black;
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+}
 
-/* About */
+#iconCopy:hover {
+  transform: scale(1.2);
+}
+#iconCopy .fa-file-circle-plus {
+  color: rgb(116, 116, 116);
+  cursor: pointer;
+}
+#iconCopy .fa-file-circle-check {
+  color: #48d8a4;
+  cursor: pointer;
+}
+
 #about {
   padding-block: 50px;
 }
@@ -92,21 +95,16 @@ nav ul li:hover::after {
 .container-about {
   display: flex;
 }
-
 .container-about .container-img {
   width: 30%;
 }
-
 .container-about .container-img img {
   width: 100%;
 }
-
 .container-about .container-text {
   width: 70%;
 }
-/* ./About */
 
-/* Footer */
 footer {
   background: #333;
   color: #fff;

@@ -1,0 +1,36 @@
+#home {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  font-size: 2.5rem;
+}
+#home .container-flip .icon.icon {
+  font-size: 3rem;
+}
+#home .contact-header {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+#home .contact-header .copyboard {
+  display: flex;
+  margin: 0.5rem 0;
+}
+#home .contact-header .copyboard .container {
+  padding: 0.5rem 1rem;
+  background-color: rgb(243, 244, 246);
+  display: flex;
+  color: black;
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+}
+
+#iconCopy:hover {
+  transform: scale(1.2);
+}
+#iconCopy .fa-file-circle-plus {
+  color: rgb(116, 116, 116);
+  cursor: pointer;
+}
+#iconCopy .fa-file-circle-check {
+  color: #48d8a4;
+  cursor: pointer;
+}

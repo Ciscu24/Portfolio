@@ -1,0 +1,41 @@
+nav ul {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+  font-size: 125%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li::after {
+  content: "";
+  width: 72%;
+  height: 4px;
+  background-color: #f48480;
+  position: absolute;
+  bottom: 0;
+  left: 14%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+nav ul li:hover::after {
+  transform: scaleX(1);
+}
+nav ul li a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 26px 10px;
+}
