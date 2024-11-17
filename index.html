@@ -6,6 +6,7 @@
     <title>Portfolio FGC</title>
 
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/general.css" />
@@ -15,13 +16,20 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <header>
       <nav>
         <ul>
-          <li><a href="#home">Inicio</a></li> 
+          <li><a href="#home">Inicio</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#work">Proyectos</a></li>
           <li><a href="#about">Sobre mí</a></li>
@@ -68,10 +76,10 @@
             <button class="btn btn-primary"><i class="fa-solid fa-download"></i> Currículum</button>
           </div>
           <div class="copyboard">
-            <div class="container">
+            <div class="container" onclick="copyText()" title="Copiar al portapapeles">
               <i class="fa-regular fa-envelope"></i>
               <p id="textToCopy">fgarcor24gmail.com</p>
-              <span id="iconCopy" onclick="copyText()" title="Copiar al portapapeles"><i class="fa-solid fa-file-circle-plus"></i></span>
+              <span id="iconCopy"><i class="fa-solid fa-file-circle-plus"></i></span>
             </div>
           </div>
         </div>
@@ -79,6 +87,61 @@
     </section>
     <!-- ./Introducción -->
 
+    <!-- Habilidades -->
+    <section id="skills">
+      <div class="wrapper">
+        <h2 class="header"><i class="fa-solid fa-toolbox"></i> Habilidades</h2>
+
+        <div class="container-skills">
+          <div class="skill-item">
+            <h4>Backend</h4>
+            <div class="skills">
+              <div class="skill">
+                <i class="devicon-dotnetcore-plain"></i>
+                <p>.NET</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-dotnetcore-plain"></i>
+                <p>.NET</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-dotnetcore-plain"></i>
+                <p>.NET</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-dotnetcore-plain"></i>
+                <p>.NET</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h4>Frontend</h4>
+            <div class="skills">
+              <div class="skill">
+                <i class="devicon-dotnetcore-plain"></i>
+                <p>.NET</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-dotnetcore-plain"></i>
+                <p>.NET</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-dotnetcore-plain"></i>
+                <p>.NET</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-dotnetcore-plain"></i>
+                <p>.NET</p>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Habilidades -->
+
+    <!-- Sobre mí -->
     <section id="about">
       <div class="wrapper">
         <h2 class="header"><i class="fa-regular fa-user"></i> Sobre mí</h2>
@@ -86,26 +149,32 @@
         <div class="container-about">
           <div class="container-text">
             <p>
-              Soy un Desarrollador Full Stack especializado en Backend con .NET y experiencia en Frontend con Angular.
-              Durante más de {{YearsWorking}} años he estado creando aplicaciones web que resuelven problemas reales,
-              enfocándome en diseñar soluciones robustas, escalables y fáciles de mantener.
+              Soy un <strong>Desarrollador Full Stack especializado en Backend con .NET</strong> y experiencia en
+              <strong>Frontend con Angular</strong>. Durante <strong>más de {{YearsWorking}} años</strong> he estado
+              creando <strong>aplicaciones web que resuelven problemas reales</strong>, enfocándome en diseñar
+              soluciones <strong>robustas, escalables y fáciles de mantener</strong>.
             </p>
-
+            <br />
             <p>
-              Mi pasión se centra en el desarrollo Backend, donde disfruto enfrentando desafíos complejos y
-              transformándolos en sistemas eficientes y bien estructurados. Sin embargo, también tengo experiencia en el
-              desarrollo Frontend, lo que me permite tener una visión completa del proceso y contribuir en cualquier
-              etapa del desarrollo.
+              Mi pasión se centra en el <strong>desarrollo Backend</strong>, donde disfruto enfrentando
+              <strong>desafíos complejos</strong> y transformándolos en
+              <strong>sistemas eficientes y bien estructurados</strong>. Sin embargo, también tengo experiencia en el
+              <strong>desarrollo Frontend</strong>, lo que me permite tener una
+              <strong>visión completa del proceso</strong> y contribuir en cualquier etapa del desarrollo.
             </p>
-
+            <br />
             <p>
-              Me considero una persona responsable, trabajadora y con una fuerte capacidad para colaborar en equipo. Me
-              gusta aprender constantemente y mantenerme actualizado con las nuevas tecnologías, lo que me permite
-              seguir mejorando y aportar valor a los proyectos en los que participo. Mi objetivo es contribuir al éxito
-              de cada equipo y proyecto, buscando siempre la mejor solución posible.
+              Me considero una persona <strong>responsable, trabajadora</strong> y con una fuerte capacidad para
+              <strong>colaborar en equipo</strong>. Me gusta <strong>aprender constantemente</strong> y
+              <strong>mantenerme actualizado con las nuevas tecnologías</strong>, lo que me permite seguir mejorando y
+              aportar valor a los proyectos en los que participo. Mi objetivo es
+              <strong>contribuir al éxito de cada equipo y proyecto</strong>, buscando siempre
+              <strong>la mejor solución posible</strong>.
             </p>
-
-            <p>Si buscas a alguien apasionado, comprometido y siempre dispuesto a mejorar, ¡hablemos!</p>
+            <br />
+            <p>
+              Si buscas a alguien <strong>apasionado, comprometido</strong> y siempre dispuesto a mejorar, ¡hablemos!
+            </p>
           </div>
           <div class="container-img">
             <img src="assets/profile-francisco-300.png" alt="francisco" />
@@ -113,6 +182,7 @@
         </div>
       </div>
     </section>
+    <!-- ./Sobre mí -->
 
     <footer id="footer">
       <p>&copy; {{YearNow}} Francisco García Córdoba. Todos los derechos reservados.</p>

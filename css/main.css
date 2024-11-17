@@ -1,6 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: rgba(5, 102, 141, 0.5);
+  background: linear-gradient(180deg, rgba(5, 102, 141, 0.5) 0%, rgb(255, 255, 255) 100%);
 }
 
 .wrapper {
@@ -34,7 +40,7 @@ nav ul li::after {
   content: "";
   width: 72%;
   height: 4px;
-  background-color: #f48480;
+  background-color: #FF7F50;
   position: absolute;
   bottom: 0;
   left: 14%;
@@ -69,40 +75,46 @@ nav ul li a {
 }
 #home .contact-header .copyboard .container {
   padding: 0.5rem 1rem;
-  background-color: rgb(243, 244, 246);
+  background-color: rgba(40, 40, 40, 0.8);
   display: flex;
-  color: black;
+  align-items: center;
+  color: white;
   border-radius: 0.25rem;
   gap: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#home .contact-header .copyboard .container:hover {
+  background: #252525;
 }
 
-#iconCopy:hover {
-  transform: scale(1.2);
-}
 #iconCopy .fa-file-circle-plus {
-  color: rgb(116, 116, 116);
+  color: white;
   cursor: pointer;
 }
 #iconCopy .fa-file-circle-check {
-  color: #48d8a4;
+  color: #FF7F50;
   cursor: pointer;
 }
 
 #about {
   padding-block: 50px;
 }
-
-.container-about {
-  display: flex;
+#about .header {
+  padding-bottom: 0.5rem;
 }
-.container-about .container-img {
-  width: 30%;
+#about .container-about {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
 }
-.container-about .container-img img {
+#about .container-about .container-text strong {
+  font-weight: 500;
+  color: #FF7F50;
+}
+#about .container-about .container-img img {
   width: 100%;
-}
-.container-about .container-text {
-  width: 70%;
+  border-radius: 10rem;
 }
 
 footer {

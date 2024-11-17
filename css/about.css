@@ -4,17 +4,16 @@
 #about .header {
   padding-bottom: 0.5rem;
 }
-
-.container-about {
-  display: flex;
-  border-radius: 10rem;
+#about .container-about {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
 }
-.container-about .container-img {
-  width: 30%;
+#about .container-about .container-text strong {
+  font-weight: 500;
+  color: #FF7F50;
 }
-.container-about .container-img img {
+#about .container-about .container-img img {
   width: 100%;
-}
-.container-about .container-text {
-  width: 70%;
+  border-radius: 10rem;
 }

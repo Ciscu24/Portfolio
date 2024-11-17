@@ -1,0 +1,7 @@
+#skills .header {
+  padding-bottom: 0.5rem;
+}
+#skills .container-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

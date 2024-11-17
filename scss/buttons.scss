@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .btn {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -7,11 +9,11 @@
 }
 
 .btn-primary {
-  background-color: rgb(243 244 246);
-  color: black;
+  background-color: $primary-color;
+  color: white;
+  transition: background 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: black;
-  color: rgb(243 244 246);
+  background: darken($primary-color, 10);
 }

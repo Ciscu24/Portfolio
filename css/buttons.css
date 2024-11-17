@@ -7,11 +7,11 @@
 }
 
 .btn-primary {
-  background-color: rgb(243, 244, 246);
-  color: black;
+  background-color: #FF7F50;
+  color: white;
+  transition: background 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: black;
-  color: rgb(243, 244, 246);
+  background: #ff5a1d;
 }
