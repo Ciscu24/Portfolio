@@ -1,7 +1,36 @@
+#skills {
+  padding-top: 50px;
+}
 #skills .header {
   padding-bottom: 0.5rem;
 }
 #skills .container-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+#skills .container-skills .skill-item {
+  padding: 0.5rem;
+}
+#skills .container-skills .skill-item legend {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+#skills .container-skills .skill-item .skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+#skills .container-skills .skill-item .skills .skill {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#skills .container-skills .skill-item .skills .skill i {
+  font-size: 4rem;
+}
+#skills .container-skills .skill-item .skills .skill p {
+  text-align: center;
 }

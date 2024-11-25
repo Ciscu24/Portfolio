@@ -1,4 +1,6 @@
 #skills {
+  padding-top: 50px;
+
   .header {
     padding-bottom: 0.5rem;
   }
@@ -6,8 +8,37 @@
   .container-skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 
     .skill-item {
+      padding: 0.5rem;
+
+      legend {
+        margin-left: 1rem;
+        font-weight: 600;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        .skill {
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          i {
+            font-size: 4rem;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
